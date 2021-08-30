@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'personalweb/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'personalweb/underline_hover.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'personalweb/typing_anim.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26f5f6462d.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1" href={% url 'Personal-Home' %}>PK.</a>
+        <span class="nav navbar-nav ml-auto">
+            <a class="nav-link" href="#contact">Contact</a>
+        </span>
+    </nav>
+    
+
+    {% block content%}{% endblock %}
+
+
+    <footer class="container-fluid bg-3 text-center" id ="footer">
+
+        <p>©   <script>document.write(new Date().getFullYear())</script> Phuykong Meng. All rights reserved.</p>
+        <div class="social_links">
+            <section id="social_links">
+                <!-- Github -->
+                <a id="footer_social_button" href="https://github.com/M-Phuykong" target="_blank" rel="noopener noreferrer" role="button" "
+                ><i class="fab fa-github fa-lg"></i
+                ></a>
+                
+                <!-- Linkedin -->
+                <a id="footer_social_button" href="https://www.linkedin.com/in/phuykong-meng-6ba07a214/" target="_blank" rel="noopener noreferrer"role="button"
+                ><i class="fab fa-linkedin-in fa-lg"></i
+                ></a>
+
+            </section>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
