@@ -1,101 +1,81 @@
 
-html,body{ 
+html,
+body{ 
   margin:0; 
   padding:0;
-  height:100%; 
+  height: 100%;
 }
 
-  
-h4, p {
-  color: white;
+main{
+  /* height: calc(100% - 85px); */
+  height: 1500px;
+  width: 100%;
 }
 
 .navbar{
   padding-top: 5px;
   padding-bottom: 5px;
+  background-color: transparent;
 }
 
-.navbar-brand {
-  background-color: #fafafa;
+.container{
+  padding-top: 12px;
+}
+
+
+.navbar-brand{
+  background-color: transparent;
   overflow: hidden;
-  font-size: 50px;
-  margin-left: 100px;
+  font-size: 30px;
+  color: white;
+  font-family: Raleway;
+  font-weight: 600;
+  margin-left: 35px;
 }
 
-.navbar-nav {
+.navbar-nav{
   font-size: 20px;
-  letter-spacing: 5px;
-  margin-right: 100px;
+  letter-spacing: 3px;
+  margin-right: 40px;
+  letter-spacing: 0px;
+  color: white;
+} 
+
+.nav-item{
+  margin: 5px;
 }
 
+.nav-link{
+  width: fit-content;
+  font-weight: 700;
+  font-family: Raleway;
+  font-size: 25px;
 
-.bg-3 {
-  background-color: #2f2f2f;
-  color: #ffffff;
-}
+} 
 
-@keyframes slide {
-  100% {
-    transform: translateX(-250px);
-  }
-}
-
-#temple-logo {
-  width: 150px; 
-  height: 150px;
-  top: 0;
-  transition: transform .5s;
-  text-align: center;
-  z-index: 2;
-}
-
-#temple-class-text {
-  z-index: 0;
-  position: absolute;
-}
-
-#temple-logo:hover{
-  transform: translateX(-250px);
-}
- 
-#temple-class-text:hover {
-  z-index: 1;
-}
-
-#intro {
-  background-color: antiquewhite;
+#intro{
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color:rgb(94, 202, 108);
+  text-align: center;
 }
 
-#education {
-  background-color: #a41e35;
-  padding-top: 20px; 
-  padding-bottom: 20px; 
-  display: flex;
-  justify-content: center;
-}
-
-#footer {
+footer {
   overflow-y: hidden;
-  padding-top: 35px;
-  position: relative;
+  margin-top: 20px;
+  position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 120px;   
 }
 
-#footer_social_button {
-  padding-top: 0px;
-  color: #fafafa;
-  padding: 5px;
+.footer_social_button {
+  margin-top: 15px;
+  color: white;
 }
 
-#footer_social_button:hover{
-  color: darkgrey;
+
+#github :hover{
+  color: purple;
 }
+
+
 

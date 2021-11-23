@@ -5,48 +5,13 @@
 {% block content %}
 
 
-<section id="starting_page" style="height: 90%; width: 100%;">
-    <div id="intro" class="container-fluid">
-        <h1 class="typing-anim">hello world, I'm Phuykong Meng.</h1>
-    </div>
-</section>
-
-<section id="education_part">
-    <div id="education" class="container-fluid ">
-        <div id="container" style="position: relative; width: 100%; height: 100%; display: flex;justify-content:center ;">
-            <div id="image_logo">
-                <div id="temple-logo">
-                    {% svg 'temple-logo' %}
-                </div>
-
-            </div>
-            <h4 id="temple-class-text" style="font-family: 'Kanit', sans-serif; padding-top: 30px;top: 0">Temple University '25<br>
-                B.S Computer Science </h4>
-            
-            <script>
-                const x = document.getElementById(temple_logo)
-                x.addEventListener("mouseover", function(){
-                    
-                })
-            </script>
-
-
+<main>
+    <section style="height: 100%;"> 
+        <div id="intro" class="container-fluid d-flex flex-column justify-content-center align-items-center" >
+            <h1 class="typing-anim" style="height: fit-content;">hello world!</h1>
         </div>
-        
-    </div>
-
-</section>
-
-<section>
-    <div class="projects">
-        <div id="intro" class="container-fluid text-center">
-            <h2>Projects</h2>
-        </div>
-    </div>
-
-</section>
-
-
-
-
-{% endblock content%}
+    </section>
+    
+    
+</main>
+{% endblock content %}
